@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Espacios</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://alcdn.msauth.net/browser/2.28.0/js/msal-browser.min.js"></script>
+</head>
+<body>
+    <h1>Reserva de Espacios</h1>
+
+    <!-- Botón para iniciar sesión -->
+    <button id="login-btn">Iniciar Sesión con Outlook</button>
+    
+    <!-- Formulario para seleccionar fecha y hora -->
+    <div id="reservation-form" style="display: none;">
+        <h2>Selecciona una fecha y hora</h2>
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" required>
+        <label for="time">Hora:</label>
+        <input type="time" id="time" required>
+        <button id="reserve-btn">Reservar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
